@@ -1,0 +1,58 @@
+name: Build Pinterest feed
+
+on:
+  schedule:
+    # Elke dag 04:17 UTC; Pinterest haalt de feed om 08:00 Amsterdam op.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Bewuste daling toestaan (producten gearchiveerd) — omzeilt de beveiliging eenmalig"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - build-feed.mjs
+      - "docs/pins/**"
+      - .github/workflows/build-feed.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+      - name: Feed bouwen
+        env:
+          FW_STOREFRONT_TOKEN: ${{ secrets.FW_STOREFRONT_TOKEN }}
+          # Repository variable; weghalen zodra clayandline.com aan de shop hangt (standaard clayandline.com).
+          SITE_BASE: ${{ vars.SITE_BASE }}
+          FORCE: ${{ inputs.force == true && '1' || '0' }}
+        run: node build-feed.mjs
+      - name: Committen als er iets veranderd is
+        run: |
+          date -u +%Y-%m-%dT%H:%M:%SZ > docs/last-build.txt
+          if [ -z "$(git status --porcelain docs/pinterest-feed.csv docs/last-build.txt)" ]; then
+            echo "Niets te committen."; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/pinterest-feed.csv docs/last-build.txt
+          if git diff --cached --quiet -- docs/pinterest-feed.csv; then
+            git commit -m "Heartbeat ($(date -u +%Y-%m-%d)) — feed ongewijzigd"
+          else
+            git commit -m "Feed bijgewerkt ($(date -u +%Y-%m-%d))"
+          fi
+          git pull --rebase origin main
+          git push

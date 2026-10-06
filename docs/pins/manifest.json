@@ -1,0 +1,354 @@
+{
+ "gemaakt": "2026-10-06",
+ "versie": "v1",
+ "producten": {
+  "mid-century-hourglass-print-bathroom-wall-art": {
+   "serie": "blush-geometric-03",
+   "afbeeldingen": [
+    "blush-geometric-03/mid-century-hourglass-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "blush-geometric-03/mid-century-hourglass-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "blush-pink-geometric-print-bathroom-wall-art": {
+   "serie": "blush-geometric-03",
+   "afbeeldingen": [
+    "blush-geometric-03/blush-pink-geometric-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "blush-geometric-03/blush-pink-geometric-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "rust-star-geometric-print-bathroom-wall-art": {
+   "serie": "blush-geometric-03",
+   "afbeeldingen": [
+    "blush-geometric-03/rust-star-geometric-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "blush-geometric-03/rust-star-geometric-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "pink-bathroom-wall-art-set-of-3-geometric-prints": {
+   "serie": "blush-geometric-03",
+   "set": true,
+   "afbeeldingen": [
+    "blush-geometric-03/pink-bathroom-wall-art-set-of-3-geometric-prints-bath-oak-3-v1.jpg",
+    "blush-geometric-03/pink-bathroom-wall-art-set-of-3-geometric-prints-set-overview-v1.jpg"
+   ]
+  },
+  "charcoal-sun-print-earthy-bathroom-wall-art": {
+   "serie": "charcoal-clay-12",
+   "afbeeldingen": [
+    "charcoal-clay-12/charcoal-sun-print-earthy-bathroom-wall-art-bath-vanity-v1.jpg",
+    "charcoal-clay-12/charcoal-sun-print-earthy-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "atomic-starburst-print-mid-century-bathroom-wall-art": {
+   "serie": "charcoal-clay-12",
+   "afbeeldingen": [
+    "charcoal-clay-12/atomic-starburst-print-mid-century-bathroom-wall-art-bath-vanity-v1.jpg",
+    "charcoal-clay-12/atomic-starburst-print-mid-century-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "geometric-hourglass-line-print-black-clay-bathroom-wall-art": {
+   "serie": "charcoal-clay-12",
+   "afbeeldingen": [
+    "charcoal-clay-12/geometric-hourglass-line-print-black-clay-bathroom-wall-art-bath-vanity-v1.jpg",
+    "charcoal-clay-12/geometric-hourglass-line-print-black-clay-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "earthy-bathroom-wall-art-set-of-3-charcoal-clay-prints": {
+   "serie": "charcoal-clay-12",
+   "set": true,
+   "afbeeldingen": [
+    "charcoal-clay-12/earthy-bathroom-wall-art-set-of-3-charcoal-clay-prints-bath-oak-3-v1.jpg",
+    "charcoal-clay-12/earthy-bathroom-wall-art-set-of-3-charcoal-clay-prints-set-overview-v1.jpg"
+   ]
+  },
+  "navy-sunburst-print-bathroom-wall-art": {
+   "serie": "coastal-sun-04",
+   "afbeeldingen": [
+    "coastal-sun-04/navy-sunburst-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coastal-sun-04/navy-sunburst-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "ocean-waves-sunset-print-coastal-bathroom-wall-art": {
+   "serie": "coastal-sun-04",
+   "afbeeldingen": [
+    "coastal-sun-04/ocean-waves-sunset-print-coastal-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coastal-sun-04/ocean-waves-sunset-print-coastal-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "navy-mustard-rainbow-print-bathroom-wall-art": {
+   "serie": "coastal-sun-04",
+   "afbeeldingen": [
+    "coastal-sun-04/navy-mustard-rainbow-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coastal-sun-04/navy-mustard-rainbow-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "coastal-bathroom-wall-art-set-of-3-navy-mustard-prints": {
+   "serie": "coastal-sun-04",
+   "set": true,
+   "afbeeldingen": [
+    "coastal-sun-04/coastal-bathroom-wall-art-set-of-3-navy-mustard-prints-bath-oak-3-v1.jpg",
+    "coastal-sun-04/coastal-bathroom-wall-art-set-of-3-navy-mustard-prints-set-overview-v1.jpg"
+   ]
+  },
+  "coral-boomerang-print-retro-bathroom-wall-art": {
+   "serie": "coral-pop-11",
+   "afbeeldingen": [
+    "coral-pop-11/coral-boomerang-print-retro-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coral-pop-11/coral-boomerang-print-retro-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "teal-coral-mid-century-print-retro-bathroom-wall-art": {
+   "serie": "coral-pop-11",
+   "afbeeldingen": [
+    "coral-pop-11/teal-coral-mid-century-print-retro-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coral-pop-11/teal-coral-mid-century-print-retro-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "teal-boomerang-sun-print-colorful-bathroom-wall-art": {
+   "serie": "coral-pop-11",
+   "afbeeldingen": [
+    "coral-pop-11/teal-boomerang-sun-print-colorful-bathroom-wall-art-bath-vanity-v1.jpg",
+    "coral-pop-11/teal-boomerang-sun-print-colorful-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "colorful-bathroom-wall-art-set-of-3-coral-teal-prints": {
+   "serie": "coral-pop-11",
+   "set": true,
+   "afbeeldingen": [
+    "coral-pop-11/colorful-bathroom-wall-art-set-of-3-coral-teal-prints-bath-oak-3-v1.jpg",
+    "coral-pop-11/colorful-bathroom-wall-art-set-of-3-coral-teal-prints-set-overview-v1.jpg"
+   ]
+  },
+  "dusty-blue-line-arch-print-peach-bathroom-wall-art": {
+   "serie": "dusty-blue-08",
+   "afbeeldingen": [
+    "dusty-blue-08/dusty-blue-line-arch-print-peach-bathroom-wall-art-bath-vanity-v1.jpg",
+    "dusty-blue-08/dusty-blue-line-arch-print-peach-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "blue-ripple-star-print-minimalist-bathroom-wall-art": {
+   "serie": "dusty-blue-08",
+   "afbeeldingen": [
+    "dusty-blue-08/blue-ripple-star-print-minimalist-bathroom-wall-art-bath-vanity-v1.jpg",
+    "dusty-blue-08/blue-ripple-star-print-minimalist-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "peach-sunrise-rainbow-print-dusty-blue-bathroom-wall-art": {
+   "serie": "dusty-blue-08",
+   "afbeeldingen": [
+    "dusty-blue-08/peach-sunrise-rainbow-print-dusty-blue-bathroom-wall-art-bath-vanity-v1.jpg",
+    "dusty-blue-08/peach-sunrise-rainbow-print-dusty-blue-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "dusty-blue-bathroom-wall-art-set-of-3-peach-line-prints": {
+   "serie": "dusty-blue-08",
+   "set": true,
+   "afbeeldingen": [
+    "dusty-blue-08/dusty-blue-bathroom-wall-art-set-of-3-peach-line-prints-bath-oak-3-v1.jpg",
+    "dusty-blue-08/dusty-blue-bathroom-wall-art-set-of-3-peach-line-prints-set-overview-v1.jpg"
+   ]
+  },
+  "forest-green-branch-print-botanical-bathroom-wall-art": {
+   "serie": "forest-gold-10",
+   "afbeeldingen": [
+    "forest-gold-10/forest-green-branch-print-botanical-bathroom-wall-art-bath-vanity-v1.jpg",
+    "forest-gold-10/forest-green-branch-print-botanical-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "green-mid-century-circle-print-modern-bathroom-wall-art": {
+   "serie": "forest-gold-10",
+   "afbeeldingen": [
+    "forest-gold-10/green-mid-century-circle-print-modern-bathroom-wall-art-bath-vanity-v1.jpg",
+    "forest-gold-10/green-mid-century-circle-print-modern-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "green-line-arch-print-boho-bathroom-wall-art": {
+   "serie": "forest-gold-10",
+   "afbeeldingen": [
+    "forest-gold-10/green-line-arch-print-boho-bathroom-wall-art-bath-vanity-v1.jpg",
+    "forest-gold-10/green-line-arch-print-boho-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "green-bathroom-wall-art-set-of-3-forest-gold-prints": {
+   "serie": "forest-gold-10",
+   "set": true,
+   "afbeeldingen": [
+    "forest-gold-10/green-bathroom-wall-art-set-of-3-forest-gold-prints-bath-oak-3-v1.jpg",
+    "forest-gold-10/green-bathroom-wall-art-set-of-3-forest-gold-prints-set-overview-v1.jpg"
+   ]
+  },
+  "lavender-moon-print-abstract-bathroom-wall-art": {
+   "serie": "lavender-night-09",
+   "afbeeldingen": [
+    "lavender-night-09/lavender-moon-print-abstract-bathroom-wall-art-bath-vanity-v1.jpg",
+    "lavender-night-09/lavender-moon-print-abstract-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "lilac-mid-century-shape-print-pastel-bathroom-wall-art": {
+   "serie": "lavender-night-09",
+   "afbeeldingen": [
+    "lavender-night-09/lilac-mid-century-shape-print-pastel-bathroom-wall-art-bath-vanity-v1.jpg",
+    "lavender-night-09/lilac-mid-century-shape-print-pastel-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "purple-night-sky-star-print-lavender-bathroom-wall-art": {
+   "serie": "lavender-night-09",
+   "afbeeldingen": [
+    "lavender-night-09/purple-night-sky-star-print-lavender-bathroom-wall-art-bath-vanity-v1.jpg",
+    "lavender-night-09/purple-night-sky-star-print-lavender-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "lavender-bathroom-wall-art-set-of-3-moon-star-prints": {
+   "serie": "lavender-night-09",
+   "set": true,
+   "afbeeldingen": [
+    "lavender-night-09/lavender-bathroom-wall-art-set-of-3-moon-star-prints-bath-oak-3-v1.jpg",
+    "lavender-night-09/lavender-bathroom-wall-art-set-of-3-moon-star-prints-set-overview-v1.jpg"
+   ]
+  },
+  "mocha-layered-arch-print-neutral-bathroom-wall-art": {
+   "serie": "mocha-arches-05",
+   "afbeeldingen": [
+    "mocha-arches-05/mocha-layered-arch-print-neutral-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mocha-arches-05/mocha-layered-arch-print-neutral-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "beige-split-arch-sun-print-boho-bathroom-wall-art": {
+   "serie": "mocha-arches-05",
+   "afbeeldingen": [
+    "mocha-arches-05/beige-split-arch-sun-print-boho-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mocha-arches-05/beige-split-arch-sun-print-boho-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "minimalist-line-arch-print-neutral-bathroom-wall-art": {
+   "serie": "mocha-arches-05",
+   "afbeeldingen": [
+    "mocha-arches-05/minimalist-line-arch-print-neutral-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mocha-arches-05/minimalist-line-arch-print-neutral-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "neutral-bathroom-wall-art-set-of-3-mocha-arch-prints": {
+   "serie": "mocha-arches-05",
+   "set": true,
+   "afbeeldingen": [
+    "mocha-arches-05/neutral-bathroom-wall-art-set-of-3-mocha-arch-prints-bath-oak-3-v1.jpg",
+    "mocha-arches-05/neutral-bathroom-wall-art-set-of-3-mocha-arch-prints-set-overview-v1.jpg"
+   ]
+  },
+  "black-circle-line-art-print-minimalist-bathroom-wall-art": {
+   "serie": "mono-minimal-07",
+   "afbeeldingen": [
+    "mono-minimal-07/black-circle-line-art-print-minimalist-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mono-minimal-07/black-circle-line-art-print-minimalist-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "black-sun-abstract-print-modern-bathroom-wall-art": {
+   "serie": "mono-minimal-07",
+   "afbeeldingen": [
+    "mono-minimal-07/black-sun-abstract-print-modern-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mono-minimal-07/black-sun-abstract-print-modern-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "geometric-square-line-print-black-white-bathroom-wall-art": {
+   "serie": "mono-minimal-07",
+   "afbeeldingen": [
+    "mono-minimal-07/geometric-square-line-print-black-white-bathroom-wall-art-bath-vanity-v1.jpg",
+    "mono-minimal-07/geometric-square-line-print-black-white-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "black-white-bathroom-wall-art-set-of-3-minimalist-prints": {
+   "serie": "mono-minimal-07",
+   "set": true,
+   "afbeeldingen": [
+    "mono-minimal-07/black-white-bathroom-wall-art-set-of-3-minimalist-prints-bath-oak-3-v1.jpg",
+    "mono-minimal-07/black-white-bathroom-wall-art-set-of-3-minimalist-prints-set-overview-v1.jpg"
+   ]
+  },
+  "olive-green-retro-plant-print-bathroom-wall-art": {
+   "serie": "olive-retro-06",
+   "afbeeldingen": [
+    "olive-retro-06/olive-green-retro-plant-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "olive-retro-06/olive-green-retro-plant-print-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "mustard-sun-geometric-print-retro-bathroom-wall-art": {
+   "serie": "olive-retro-06",
+   "afbeeldingen": [
+    "olive-retro-06/mustard-sun-geometric-print-retro-bathroom-wall-art-bath-vanity-v1.jpg",
+    "olive-retro-06/mustard-sun-geometric-print-retro-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "retro-sprout-print-olive-mustard-bathroom-wall-art": {
+   "serie": "olive-retro-06",
+   "afbeeldingen": [
+    "olive-retro-06/retro-sprout-print-olive-mustard-bathroom-wall-art-bath-vanity-v1.jpg",
+    "olive-retro-06/retro-sprout-print-olive-mustard-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "retro-bathroom-wall-art-set-of-3-olive-mustard-prints": {
+   "serie": "olive-retro-06",
+   "set": true,
+   "afbeeldingen": [
+    "olive-retro-06/retro-bathroom-wall-art-set-of-3-olive-mustard-prints-bath-oak-3-v1.jpg",
+    "olive-retro-06/retro-bathroom-wall-art-set-of-3-olive-mustard-prints-set-overview-v1.jpg"
+   ]
+  },
+  "sage-green-botanical-arch-print-bathroom-wall-art": {
+   "serie": "sage-botanical-02",
+   "afbeeldingen": [
+    "sage-botanical-02/sage-green-botanical-arch-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "sage-botanical-02/sage-green-botanical-arch-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "boho-palm-leaf-sun-print-bathroom-wall-art": {
+   "serie": "sage-botanical-02",
+   "afbeeldingen": [
+    "sage-botanical-02/boho-palm-leaf-sun-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "sage-botanical-02/boho-palm-leaf-sun-print-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "minimalist-plant-stem-print-sage-bathroom-wall-art": {
+   "serie": "sage-botanical-02",
+   "afbeeldingen": [
+    "sage-botanical-02/minimalist-plant-stem-print-sage-bathroom-wall-art-bath-vanity-v1.jpg",
+    "sage-botanical-02/minimalist-plant-stem-print-sage-bathroom-wall-art-bath-cool-v1.jpg"
+   ]
+  },
+  "sage-green-bathroom-wall-art-set-of-3-botanical-prints": {
+   "serie": "sage-botanical-02",
+   "set": true,
+   "afbeeldingen": [
+    "sage-botanical-02/sage-green-bathroom-wall-art-set-of-3-botanical-prints-bath-oak-3-v1.jpg",
+    "sage-botanical-02/sage-green-bathroom-wall-art-set-of-3-botanical-prints-set-overview-v1.jpg"
+   ]
+  },
+  "terracotta-sun-arch-print-bathroom-wall-art": {
+   "serie": "terracotta-arches-01",
+   "afbeeldingen": [
+    "terracotta-arches-01/terracotta-sun-arch-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "terracotta-arches-01/terracotta-sun-arch-print-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "boho-rainbow-sun-print-bathroom-wall-art": {
+   "serie": "terracotta-arches-01",
+   "afbeeldingen": [
+    "terracotta-arches-01/boho-rainbow-sun-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "terracotta-arches-01/boho-rainbow-sun-print-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "terracotta-sun-horizon-print-bathroom-wall-art": {
+   "serie": "terracotta-arches-01",
+   "afbeeldingen": [
+    "terracotta-arches-01/terracotta-sun-horizon-print-bathroom-wall-art-bath-vanity-v1.jpg",
+    "terracotta-arches-01/terracotta-sun-horizon-print-bathroom-wall-art-bath-dark-v1.jpg"
+   ]
+  },
+  "bathroom-wall-art-set-of-3-terracotta-abstract-prints": {
+   "serie": "terracotta-arches-01",
+   "set": true,
+   "afbeeldingen": [
+    "terracotta-arches-01/bathroom-wall-art-set-of-3-terracotta-abstract-prints-bath-oak-3-v1.jpg",
+    "terracotta-arches-01/bathroom-wall-art-set-of-3-terracotta-abstract-prints-set-overview-v1.jpg"
+   ]
+  }
+ }
+}
