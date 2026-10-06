@@ -316,12 +316,18 @@ function guard(newRows) {
  *  - alleen kamermockups: het set-overzicht (beeld met tekst) gaat niet mee — Google keurt
  *    afbeeldingen met tekst/overlays af;
  *  - identifier_exists = no (eigen ontwerpen, geen GTIN/MPN), product_type/categorie zoals Pinterest.
- * Verzendkosten en retourbeleid stel je in Merchant Center zelf in.
+ *  - shipping per regel: Fourthwall rekent in de VS een vast tarief per bestelling dat afhangt van de
+ *    grootste poster (t/m 18×24: $5,79; 20×30/24×36: $8,79) plus $0,40 per extra poster (gemeten 6 okt 2026
+ *    via proef-checkouts naar NY/CA). De feedregel toont de vanaf-prijs (8×10), dus poster $5,79, set $6,59.
+ *    Google keurt alleen af als de echte kosten hoger zijn dan opgegeven; voor grotere maten rekent de
+ *    klant in de checkout meer, maar dat is een andere variant dan de aangeboden. Retourbeleid: in Merchant Center.
  */
+const GOOGLE_SHIPPING = { poster: "US:::5.79 USD", set: "US:::6.59 USD" };
+
 const GOOGLE_COLUMNS = [
   "id", "title", "description", "link", "image_link", "additional_image_link",
   "availability", "price", "brand", "condition", "google_product_category",
-  "product_type", "identifier_exists", "custom_label_0", "custom_label_1",
+  "product_type", "identifier_exists", "shipping", "custom_label_0", "custom_label_1",
 ];
 
 function tsvField(value) {
@@ -337,6 +343,7 @@ function writeGoogleFeed(rows) {
       ...r,
       additional_image_link: extra.join(","),
       identifier_exists: "no",
+      shipping: r.custom_label_1 === "set" ? GOOGLE_SHIPPING.set : GOOGLE_SHIPPING.poster,
       // Google wil de link zonder pinterest-UTM; eigen UTM voor 'Sales by UTM' in Fourthwall
       link: r.link.replace("utm_source=pinterest", "utm_source=google").replace("utm_medium=catalog", "utm_medium=shopping").replace("utm_campaign=pinterest-catalog", "utm_campaign=google-shopping"),
     };

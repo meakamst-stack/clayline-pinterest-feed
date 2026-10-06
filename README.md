@@ -37,10 +37,14 @@ ochtend (08:00 Amsterdam) ophaalt voor de catalogus van clayandline.com. Afgelei
 
 Hetzelfde script schrijft ook `docs/google-feed.tsv` (tab-gescheiden) →
 `https://meakamst-stack.github.io/clayline-pinterest-feed/google-feed.tsv`. Verschillen met de Pinterest-feed:
-alleen kamermockups (geen set-overzicht met tekst), `identifier_exists = no`, UTM `google / shopping / google-shopping`.
-In Merchant Center: Producten → Feeds → nieuwe feed → **Geplande ophaalactie** met deze URL, dagelijks
-(bijv. 09:00 Amsterdam, na de nachtelijke build). Land VS, taal Engels, valuta USD. Verzendkosten en
-retourbeleid stel je in Merchant Center zelf in.
+alleen kamermockups (geen set-overzicht met tekst), `identifier_exists = no`, UTM `google / shopping / google-shopping`,
+en een kolom `shipping` per regel (poster `US:::5.79 USD`, set `US:::6.59 USD` — Fourthwalls vaste VS-tarief voor de
+vanaf-maat 8×10; gemeten 6 okt 2026, aanpassen in `GOOGLE_SHIPPING` als Fourthwall de tarieven wijzigt).
+Merchant Center "Clay & Line" (ID 5870630874) haalt de URL dagelijks 09:00 Amsterdam op (land VS, Engels, USD);
+retourbeleid en de VS-verzendservice (levertijd) staan in Merchant Center zelf.
+
+Fourthwall VS-verzendkosten (checkout, 6 okt 2026): 1 poster t/m 18×24 $5,79; 20×30 of 24×36 $8,79;
+elke extra poster + $0,40; set van 3 dus $6,59 (klein) of $9,59 (groot). Zelfde in NY en CA, 6–9 werkdagen.
 
 ## Beveiliging
 
