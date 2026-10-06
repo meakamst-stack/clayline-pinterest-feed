@@ -33,6 +33,15 @@ ochtend (08:00 Amsterdam) ophaalt voor de catalogus van clayandline.com. Afgelei
 `product_type` (Home Decor > Wall Art > Bathroom), `item_group_id` (= slug), `additional_image_link`,
 `custom_label_0` (serie, bv. `terracotta-arches-01`), `custom_label_1` (`poster` of `set`).
 
+## Google Merchant Center
+
+Hetzelfde script schrijft ook `docs/google-feed.tsv` (tab-gescheiden) →
+`https://meakamst-stack.github.io/clayline-pinterest-feed/google-feed.tsv`. Verschillen met de Pinterest-feed:
+alleen kamermockups (geen set-overzicht met tekst), `identifier_exists = no`, UTM `google / shopping / google-shopping`.
+In Merchant Center: Producten → Feeds → nieuwe feed → **Geplande ophaalactie** met deze URL, dagelijks
+(bijv. 09:00 Amsterdam, na de nachtelijke build). Land VS, taal Engels, valuta USD. Verzendkosten en
+retourbeleid stel je in Merchant Center zelf in.
+
 ## Beveiliging
 
 Het script weigert te schrijven (exit 2, bestaande feed blijft staan) als het aantal regels meer dan

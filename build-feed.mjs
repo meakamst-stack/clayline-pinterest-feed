@@ -308,6 +308,46 @@ function guard(newRows) {
   return reasons;
 }
 
+// --------------------------------------------------------- Google Merchant Center
+
+/**
+ * Tweede uitvoer voor Google Merchant Center (geplande ophaalactie): docs/google-feed.tsv.
+ * Zelfde regels als de Pinterest-feed, met twee verschillen:
+ *  - alleen kamermockups: het set-overzicht (beeld met tekst) gaat niet mee — Google keurt
+ *    afbeeldingen met tekst/overlays af;
+ *  - identifier_exists = no (eigen ontwerpen, geen GTIN/MPN), product_type/categorie zoals Pinterest.
+ * Verzendkosten en retourbeleid stel je in Merchant Center zelf in.
+ */
+const GOOGLE_COLUMNS = [
+  "id", "title", "description", "link", "image_link", "additional_image_link",
+  "availability", "price", "brand", "condition", "google_product_category",
+  "product_type", "identifier_exists", "custom_label_0", "custom_label_1",
+];
+
+function tsvField(value) {
+  return (value === null || value === undefined ? "" : String(value)).replace(/[\t\r\n]+/g, " ");
+}
+
+function writeGoogleFeed(rows) {
+  const out = rows.map((r) => {
+    const extra = (r.additional_image_link || "")
+      .split(",")
+      .filter((u) => u && !/set-overview/.test(u));
+    return {
+      ...r,
+      additional_image_link: extra.join(","),
+      identifier_exists: "no",
+      // Google wil de link zonder pinterest-UTM; eigen UTM voor 'Sales by UTM' in Fourthwall
+      link: r.link.replace("utm_source=pinterest", "utm_source=google").replace("utm_medium=catalog", "utm_medium=shopping").replace("utm_campaign=pinterest-catalog", "utm_campaign=google-shopping"),
+    };
+  });
+  const tsv = [GOOGLE_COLUMNS.join("\t"), ...out.map((r) => GOOGLE_COLUMNS.map((c) => tsvField(r[c])).join("\t"))].join("\n");
+  const file = "docs/google-feed.tsv";
+  writeFileSync(file + ".tmp", tsv + "\n", "utf8");
+  renameSync(file + ".tmp", file);
+  console.log(`Google-feed geschreven naar ${file}: ${out.length} regels`);
+}
+
 // ------------------------------------------------------------------ uitvoeren
 
 async function main() {
@@ -366,6 +406,8 @@ async function main() {
   const tmp = CONFIG.outFile + ".tmp";
   writeFileSync(tmp, csv + "\n", "utf8");
   renameSync(tmp, CONFIG.outFile);
+
+  writeGoogleFeed(rows);
 
   const pins = rows.reduce((n, r) => n + 1 + (r.additional_image_link ? r.additional_image_link.split(",").length : 0), 0);
   const sets = rows.filter((r) => r.custom_label_1 === "set").length;
