@@ -16,6 +16,7 @@
 
 import { writeFileSync, mkdirSync, readFileSync, existsSync, renameSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { createHash } from "node:crypto";
 
 // ---------------------------------------------------------------- instellingen
 
@@ -334,6 +335,15 @@ function tsvField(value) {
   return (value === null || value === undefined ? "" : String(value)).replace(/[\t\r\n]+/g, " ");
 }
 
+// Google Merchant Center staat max. 50 tekens toe voor id en item_group_id (sets hebben
+// langere slugs). Korter maken met een vaste hash, zodat de id stabiel en uniek blijft.
+function googleId(value) {
+  const v = String(value || "");
+  if (v.length <= 50) return v;
+  const hash = createHash("sha1").update(v).digest("hex").slice(0, 8);
+  return `${v.slice(0, 41).replace(/-+$/, "")}-${hash}`;
+}
+
 function writeGoogleFeed(rows) {
   const out = rows.map((r) => {
     const extra = (r.additional_image_link || "")
@@ -341,6 +351,8 @@ function writeGoogleFeed(rows) {
       .filter((u) => u && !/set-overview/.test(u));
     return {
       ...r,
+      id: googleId(r.id),
+      item_group_id: googleId(r.item_group_id),
       additional_image_link: extra.join(","),
       identifier_exists: "no",
       shipping: r.custom_label_1 === "set" ? GOOGLE_SHIPPING.set : GOOGLE_SHIPPING.poster,
