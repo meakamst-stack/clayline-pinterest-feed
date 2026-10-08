@@ -40,7 +40,10 @@ const CONFIG = {
   fourthwallFallback: process.env.FW_FALLBACK === "1",
   pinsManifest: "docs/pins/manifest.json",
   pinsDir: "docs/pins",
-  pinsBaseUrl: "https://meakamst-stack.github.io/clayline-pinterest-feed/pins/",
+  // Afbeeldingen via jsDelivr (CDN op dezelfde repo) i.p.v. GitHub Pages: Pages gaf Pinterest
+  // HTTP 429 bij de eerste opname (7 van 48 producten mislukt, 8 okt). Nb: jsDelivr cachet @main
+  // tot 12 u — een bestaand bestand vervangen? Geef het een nieuwe naam (-v2.jpg).
+  pinsBaseUrl: process.env.PINS_BASE_URL || "https://cdn.jsdelivr.net/gh/meakamst-stack/clayline-pinterest-feed@main/docs/pins/",
 
   // Beveiliging: weiger een feed die >30 % krimpt of ineens geen mockups meer heeft.
   force: process.env.FORCE === "1" || process.env.FORCE === "true",
