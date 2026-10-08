@@ -194,7 +194,10 @@ function variantSoldOut(variant) {
 /** Eén feedregel per product (poster of set). */
 function productRow(product) {
   const slug = product.slug;
-  const plain = toPlainText(product.description);
+  // De set-link bovenaan posterpagina's ("Complete the look: shop the … set of 3 and save 16% →")
+  // is voor de site; Google keurt promotietekst in beschrijvingen af → niet in de feed.
+  const zonderSetLink = String(product.description || "").replace(/<p>(?:(?!<\/p>)[\s\S])*Complete the look(?:(?!<\/p>)[\s\S])*<\/p>/gi, "");
+  const plain = toPlainText(zonderSetLink);
   if (!plain) console.warn(`Let op: ${slug} heeft geen beschrijving — productnaam gebruikt.`);
   const description = truncate(plain || product.name, 5000);
 
